@@ -20,7 +20,7 @@
         </activity>
         <activity
             android:name=".SecondActivity"
-            android:configChanges="orientation|screenSize|smallestScreenSize"
+            android:configChanges="orientation|screenSize"
             android:label="@string/title_activity_second"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>
