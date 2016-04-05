@@ -9,15 +9,14 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.twlkyao.myonsave.MainActivity"
-    tools:showIn="@layout/activity_main">
-
+    tools:context="com.twlkyao.myonsave.SecondActivity"
+    tools:showIn="@layout/activity_second">
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:text="MainActivity use onSaveInstanceState() and onRestoreInstanceState()." />
+        android:text="SecondActivity use onConfigurationChanged to avoid recreate the Activity." />
 
     <EditText
         android:id="@+id/editText"
@@ -27,12 +26,4 @@
         android:layout_centerInParent="true"
         android:layout_marginTop="10dp" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editText"
-        android:layout_centerInParent="true"
-        android:text="To SecondActivity"
-        android:layout_marginTop="10dp" />
 </RelativeLayout>
