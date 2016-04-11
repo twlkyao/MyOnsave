@@ -52,14 +52,16 @@ public class MainActivity extends Activity implements OnClickListener{
     public void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         Log.d("steveqi", "onSaveInstanceState");
-        outState.putString("string", editText.getText().toString());
+        // if the edittext has an id, then onSaveInstanceState() and onRestoreInstanceState() can omit.
+//        outState.putString("string", editText.getText().toString());
     }
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
         Log.d("steveqi", "onRestoreInstanceState");
-        editText.setText(savedInstanceState.getString("string"));
+        // if the edittext has an id, then onSaveInstanceState() and onRestoreInstanceState() can omit.
+//        editText.setText(savedInstanceState.getString("string"));
     }
 
     @Override
