@@ -4,7 +4,7 @@ To save and restore data, when your `Activity` being recreated, you can use
 
 or config the android:configChanges to avoid recreate the `Activity`.
 
-attention:
+***Attention:***
 
 The `TextView` overrides `onSaveInstanceState()/onRestoreInstanceState()`
 
